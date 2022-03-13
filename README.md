@@ -92,7 +92,7 @@ python3 app.py -s
 
 #### Create New Data
 
-```
+```http
   POST http://0.0.0.0:8000/api/data/create```
 
 | Paramater | Type     | 
@@ -117,8 +117,9 @@ python3 app.py -s
 | `years_since_last_promotion` | `int`
 | `years_with_current_manager` | `int`
 
+
 You can find more details for data information at this [link](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset)
-.
+
 
 #### List All Data
 
