@@ -47,11 +47,11 @@ Running on http://0.0.0.0:8000/
  
 ## Web Page(frontend)
 
-You can login via -> ```http http://0.0.0.0:8000/login```
+You can login via -> ```http://0.0.0.0:8000/login```
 using -> name:admin, password:admin
 
-Main Page(Dashboard) -> ```http http://0.0.0.0:8000```
-Create New Data -> ```http http://0.0.0.0:8000/multiverse/create```
+Main Page(Dashboard) -> ```http://0.0.0.0:8000```
+Create New Data -> ```http://0.0.0.0:8000/multiverse/create```
  
  
  
@@ -87,13 +87,13 @@ python3 app.py -s
 ```
 
 
-
 ## API 
 
 #### Create New Data
 
 ```http
-  POST http://0.0.0.0:8000/api/data/create```
+  POST http://0.0.0.0:8000/api/data/create
+  ```
 
 | Paramater | Type     | 
 | :-------- | :------- | 
@@ -117,9 +117,9 @@ python3 app.py -s
 | `years_since_last_promotion` | `int`
 | `years_with_current_manager` | `int`
 
+You can find more details for data information at this [link](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 
-You can find more details for data information at this [link](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset)
-
+'
 
 #### List All Data
 
@@ -127,7 +127,7 @@ Be Carefull, huge amount of data may cause the browser to crash.
 
 ```http
   GET http://0.0.0.0:8000/api/data/list/
-```
+  ```
 #### Get Specific Data <int:id>
 
 ```http
@@ -159,7 +159,7 @@ Be Carefull, huge amount of data may cause the browser to crash.
 
 #### Get The Nth Most ımportant Feature <int:order>
 
-<int:order> can be between 0 and 10
+order can be between 0 and 10
 
 ```http
   GET http://0.0.0.0:8000/api/compute/feature-importance/<int:order>
