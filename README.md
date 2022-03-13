@@ -47,11 +47,18 @@ Running on http://0.0.0.0:8000/
  
 ## Web Page(frontend)
 
-You can login via -> ```http://0.0.0.0:8000/login```
+You can login via
+```http 
+ http://0.0.0.0:8000/login```
 using -> name:admin, password:admin
 
-Main Page(Dashboard) -> ```http://0.0.0.0:8000```
-Create New Data -> ```http://0.0.0.0:8000/multiverse/create```
+Main Page(Dashboard)
+```http 
+http://0.0.0.0:8000```
+
+Create New Data 
+```http 
+http://0.0.0.0:8000/multiverse/create```
  
  
  
@@ -92,7 +99,7 @@ python3 app.py -s
 #### Create New Data
 
 ```http
-  POST http://0.0.0.0:8000/api/data/create
+  http://0.0.0.0:8000/api/data/create
   ```
 
 | Paramater | Type     | 
@@ -126,35 +133,35 @@ You can find more details for data information at this [link](https://www.kaggle
 Be Carefull, huge amount of data may cause the browser to crash.
 
 ```http
-  GET http://0.0.0.0:8000/api/data/list/
+  http://0.0.0.0:8000/api/data/list/
   ```
 #### Get Specific Data <int:id>
 
 ```http
-  GET http://0.0.0.0:8000/api/data/<id>
+  http://0.0.0.0:8000/api/data/<id>
 ```
 #### Get Last Created Data
 
 ```http
-  GET http://0.0.0.0:8000/api/data/last
+  http://0.0.0.0:8000/api/data/last
 ```
 
 #### Create New Data
 
 ```http
-  POST http://0.0.0.0:8000/api/data/create
+  http://0.0.0.0:8000/api/data/create
 ```
 
 #### Calculate Mean Values
 
 ```http
-  GET http://0.0.0.0:8000/api/compute/mean
+  http://0.0.0.0:8000/api/compute/mean
 ```
 
 #### Get Most Important 10 Feature in Data (Feature Importance for Machine Learning)
 
 ```http
-  GET http://0.0.0.0:8000/api/compute/feature-importance
+  http://0.0.0.0:8000/api/compute/feature-importance
 ```
 
 #### Get The Nth Most ımportant Feature <int:order>
@@ -162,7 +169,7 @@ Be Carefull, huge amount of data may cause the browser to crash.
 order can be between 0 and 10
 
 ```http
-  GET http://0.0.0.0:8000/api/compute/feature-importance/<int:order>
+  http://0.0.0.0:8000/api/compute/feature-importance/<int:order>
 ```
 
 
