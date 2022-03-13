@@ -41,16 +41,17 @@ While developing this service, I aimed to be modular so that different functions
   docker-compose build
   docker-compose up
 ```
- 
- 
+
+Running on http://0.0.0.0:8000/
+
  
 ## Web Page(frontend)
 
-You can login via -> ```http login/```
+You can login via -> ```http http://0.0.0.0:8000/login```
 using -> name:admin, password:admin
 
-Main Page(Dashboard) -> ```http /```
-Create New Data -> ```http multiverse/create```
+Main Page(Dashboard) -> ```http http://0.0.0.0:8000```
+Create New Data -> ```http http://0.0.0.0:8000/multiverse/create```
  
  
  
@@ -92,8 +93,7 @@ python3 app.py -s
 #### Create New Data
 
 ```http
-  POST /api/data/create/
-```
+  POST http://0.0.0.0:8000/api/data/create```
 
 | Paramater | Type     | 
 | :-------- | :------- | 
@@ -122,42 +122,46 @@ You can find more details for data information at this [link](https://www.kaggle
 
 #### List All Data
 
+Be Carefull, huge amount of data may cause the browser to crash.
+
 ```http
-  GET /api/data/list/
+  GET http://0.0.0.0:8000/api/data/list/
 ```
 #### Get Specific Data <int:id>
 
 ```http
-  GET /api/data/list/<id>
+  GET http://0.0.0.0:8000/api/data/<id>
 ```
 #### Get Last Created Data
 
 ```http
-  GET /api/data/last
+  GET http://0.0.0.0:8000/api/data/last
 ```
 
 #### Create New Data
 
 ```http
-  POST /api/data/create
+  POST http://0.0.0.0:8000/api/data/create
 ```
 
 #### Calculate Mean Values
 
 ```http
-  GET /api/compute/mean
+  GET http://0.0.0.0:8000/api/compute/mean
 ```
 
 #### Get Most Important 10 Feature in Data (Feature Importance for Machine Learning)
 
 ```http
-  POST /api/compute/feature-importance
+  GET http://0.0.0.0:8000/api/compute/feature-importance
 ```
 
 #### Get The Nth Most ımportant Feature <int:order>
 
+<int:order> can be between 0 and 10
+
 ```http
-  POST /api/compute/feature-importance/order
+  GET http://0.0.0.0:8000/api/compute/feature-importance/<int:order>
 ```
 
 
