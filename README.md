@@ -64,6 +64,9 @@ Create New Data
 requirements installation
 ```bash 
 python -m pip install --user requests
+or
+python3 -m pip install --user requests
+
 ```
 
 ### Usage
