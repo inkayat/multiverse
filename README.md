@@ -1,6 +1,18 @@
 # multiverse-api
 A system that performs scientific calculations on a database residing on a server and replies to queries submitted from Python.
 
+## Teck Stacks
+
+  <ol>
+    <li><a>Python</a></li>
+    <li><a>Docker</a></li>
+    <li><a>Redis</a></li>
+    <li><a>PostgreSQL</a></li>
+    <li><a>sqlite3</a></li>
+    <li><a>Scikit-learn</a></li>
+    <li><a>Pandas</a></li>
+  </ol>
+
 ## Installation 
 
 ```bash 
@@ -88,3 +100,5 @@ You can find more details for data information at this [link](https://www.kaggle
 ```http
   POST /api/compute/feature-importance/order
 ```
+
+
