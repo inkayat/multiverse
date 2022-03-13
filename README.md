@@ -10,9 +10,7 @@ A system that performs scientific calculations on a database residing on a serve
  
 ## WEB PAGE
 
-You can login via
-```http login/
-```
+You can login via -> ```http login/```
 using -> name:admin, password:admin
 
 Main Page(Dashboard) -> ```http /```
