@@ -37,7 +37,8 @@ A system that performs scientific calculations on a database residing on a serve
   docker-compose up
 ```
  
-## WEB PAGE
+ 
+## Web Page(frontend)
 
 You can login via -> ```http login/```
 using -> name:admin, password:admin
@@ -45,6 +46,36 @@ using -> name:admin, password:admin
 Main Page(Dashboard) -> ```http /```
 Create New Data -> ```http multiverse/create```
  
+## Console Application(cli)
+requirements installation
+```bash 
+python -m pip install --user requests
+```
+### Usage
+
+#### Help
+```bash 
+python3 app.py -h
+```
+
+#### Calculate and Get Mean Values from API endpoint
+```bash 
+python3 app.py -cm
+```
+
+#### Get Most Important Features
+```bash 
+python3 app.py -f paramater
+paramater can be used as below
+all =====> List of all 10 most important features
+(1-10) =====> Get nth most important feature
+```
+
+#### Save this data as Excel Spreadsheet
+```bash 
+python3 app.py -s 
+```
+
 ## API 
 
 #### Create New Data
