@@ -2,16 +2,31 @@
 A system that performs scientific calculations on a database residing on a server and replies to queries submitted from Python.
 
 ## Teck Stacks
-
+</details>
+<details open="open">
+    <summary>scientific calculations</summary>
+  </ol>  
+    <li><a>Scikit-learn</a></li>
+    <li><a>Pandas</a></li>
+  </ol>
+</details>
+<details open="open">
+    <summary>backend</summary>
   <ol>
     <li><a>Python</a></li>
+    <li><a>Django</a></li>
     <li><a>Docker</a></li>
     <li><a>Redis</a></li>
     <li><a>PostgreSQL</a></li>
     <li><a>sqlite3</a></li>
-    <li><a>Scikit-learn</a></li>
-    <li><a>Pandas</a></li>
   </ol>
+</details>
+<details open="open">
+  <summary>frontend</summary>
+   <ol>
+    <li><a>Boostrap</a></li>
+    <li><a>Javascript</a></li>
+
 
 ## Installation 
 
