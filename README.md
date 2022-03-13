@@ -47,9 +47,9 @@ Running on http://0.0.0.0:8000/
  
 ## Web Page(frontend)
 
-You can login via
+You can login via (Login is not required for now)
 ```http://0.0.0.0:8000/login```
-
+You need to create superuser, but it is not required to user other page.
 using -> name:admin, password:admin
 
 Main Page(Dashboard)
