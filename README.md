@@ -48,17 +48,14 @@ Running on http://0.0.0.0:8000/
 ## Web Page(frontend)
 
 You can login via
-```http 
- http://0.0.0.0:8000/login```
+```http http://0.0.0.0:8000/login```
 using -> name:admin, password:admin
 
 Main Page(Dashboard)
-```http 
-http://0.0.0.0:8000```
+```http http://0.0.0.0:8000```
 
 Create New Data 
-```http 
-http://0.0.0.0:8000/multiverse/create```
+```http http://0.0.0.0:8000/multiverse/create```
  
  
  
