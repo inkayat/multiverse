@@ -1,6 +1,9 @@
 # multiverse-api
 A system that performs scientific calculations on a database residing on a server and replies to queries submitted from Python.
 
+## Motivation and Assumptions
+While developing this service, I aimed to be modular so that different functions can be added in the future. A frontend development was made to observe the data in the database and to help the user make scientific calculations with the help of the interface. In addition, the same calculations can be made through the console application. Since I was an Artificial Intelligence developer before, I preferred to calculate the feature importance from this dataset and also to calculate the average of the data because it helps to observe possible anomalies in the data.
+
 ## Teck Stacks
 </details>
 <details open="open">
@@ -45,6 +48,7 @@ using -> name:admin, password:admin
 
 Main Page(Dashboard) -> ```http /```
 Create New Data -> ```http multiverse/create```
+ 
  
 ## Console Application(cli)
 requirements installation
