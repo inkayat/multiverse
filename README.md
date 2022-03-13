@@ -27,6 +27,8 @@ A system that performs scientific calculations on a database residing on a serve
     <li><a>Boostrap</a></li>
     <li><a>Javascript</a></li>
   </ol>
+ </details>
+
 
 ## Installation 
 
