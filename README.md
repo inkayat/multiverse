@@ -124,35 +124,35 @@ You can find more details for data information at this [link](https://www.kaggle
 
 Be Carefull, huge amount of data may cause the browser to crash.
 
-```
+```http
   GET http://0.0.0.0:8000/api/data/list/
 ```
 #### Get Specific Data <int:id>
 
-```
+```http
   GET http://0.0.0.0:8000/api/data/<id>
 ```
 #### Get Last Created Data
 
-```
+```http
   GET http://0.0.0.0:8000/api/data/last
 ```
 
 #### Create New Data
 
-```
+```http
   POST http://0.0.0.0:8000/api/data/create
 ```
 
 #### Calculate Mean Values
 
-```
+```http
   GET http://0.0.0.0:8000/api/compute/mean
 ```
 
 #### Get Most Important 10 Feature in Data (Feature Importance for Machine Learning)
 
-```
+```http
   GET http://0.0.0.0:8000/api/compute/feature-importance
 ```
 
@@ -160,7 +160,7 @@ Be Carefull, huge amount of data may cause the browser to crash.
 
 <int:order> can be between 0 and 10
 
-```
+```http
   GET http://0.0.0.0:8000/api/compute/feature-importance/<int:order>
 ```
 
