@@ -49,8 +49,7 @@ Running on http://0.0.0.0:8000/
 
 You can login via (Login is not required for now)
 ```http://0.0.0.0:8000/login```
-You need to create superuser, but it is not required to user other page.
-using -> name:admin, password:admin
+You need to create superuser, but it is not required to use other page.
 
 Main Page(Dashboard)
 ```http://0.0.0.0:8000```
@@ -76,7 +75,7 @@ python3 -m pip install --user requests
 python3 app.py -h
 ```
 
-#### Calculate and Get Mean Values from API endpoint
+#### Calculate and Get Mean Values from API Endpoint
 ```bash 
 python3 app.py -cm
 ```
